@@ -2,30 +2,33 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container-fluid mx-4">
+                <a className="navbar-brand" href="https://www.olympics.com/es/olympic-games ">
+                    <img src="https://www.olympics.com/images/static/b2p-images/logo_color.svg" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div className="collapse navbar-collapse justify-content-end ">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link active dropdown-item " aria-current="page" href="#">Home</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-item" href="#">About</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-item" href="#">Services</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-item" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+
+            </div >
+        </nav >
     );
 };
 
